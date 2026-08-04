@@ -15,9 +15,9 @@ for char in range(1,nr_symbols +1):
     password.append(random.choice(symbols))
 for char in range(1,nr_numbers + 1):
     password.append(random.choice(numbers))
-print(password)
+
 random.shuffle(password)
-print(password)
+
 
 passwordfinal=""
 for each in password:

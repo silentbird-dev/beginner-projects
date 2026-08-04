@@ -21,7 +21,7 @@ scissor='''    _______
 '''
 game_images=[rock,paper,scissor]
 user_choice=int(input("What do you choose?Type 0 for rock,1 for paper or 2 for scissors"))
-if user_choice>=0 or user_choice <=2:
+if user_choice>=0 and user_choice <=2:
     print(game_images[user_choice])
 import random
 computer_choice=random.randint(0,2)

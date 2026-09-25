@@ -23,7 +23,7 @@ text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
 
-def caeser(original_text,shift_amount,encode_or_decode):
+def caesar(original_text,shift_amount,encode_or_decode):
     output_text=""
     if encode_or_decode=="decode":
             shift_amount*=-1
@@ -35,11 +35,11 @@ def caeser(original_text,shift_amount,encode_or_decode):
         shifted_position%=len(alphabet)
         output_text+=alphabet[shifted_position]
     print(f"The {encode_or_decode}d text is {output_text}")
-caeser(text,shift,direction)
+caesar(text,shift,direction)
 
 should_continue=True
 while should_continue:
-    restart=input("Type 'yes' if you want to go again. Otherwise type 'no'.\n").lower()
-    if restart=="no":
-       should_continue=False
-       print("Goodbye")
+       restart=input("Type 'yes' if you want to go again. Otherwise type 'no'.\n").lower()
+       if restart=="no":
+          should_continue=False
+          print("Goodbye")
